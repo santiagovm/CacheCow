@@ -45,6 +45,7 @@ namespace CacheCow.Server.WebApi
                 NoStore = true
             };
 
+            // santi: null reference exception here, check core class also
             response.Content.Headers.Expires = DateTimeOffset.Now.AddDays(-1);
         }
 
